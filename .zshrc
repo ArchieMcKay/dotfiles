@@ -10,16 +10,15 @@ promptinit
 # Environment Variables
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export EDITOR="nvim"
+export NVM_DIR="$HOME/.config/nvm"
+export CLICOLOR=1
 
 # Aliases
-alias ls='ls -G'
-alias uni='cd "/Users/archiemckay/Library/CloudStorage/OneDrive-TheUniversityofSydney(Students)/Uni/Year 4/Semester 2"'
 alias vim='nvim'
 
 # Styling
 prompt walters
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# This must be at the end of the file for sdkman to work!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+# Random apps and stuff
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
